@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Home Page</title>
+        <!-- Load an icon library -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+       <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <script>
+            window.onload = function () {
+            
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light2", // "light1", "light2", "dark1", "dark2"
+                title:{
+                    text: "Top Oil Reserves"
+                },
+                axisY: {
+                    title: "Reserves(Oil Esli)"
+                },
+                data: [{        
+                    type: "column",  
+                    showInLegend: true, 
+                    legendMarkerColor: "grey",
+                    legendText: "MMbbl = one million barrels",
+                    dataPoints: [      
+                        { y: 300878, label: "Kigali" },
+                        { y: 266455,  label: "Muhanga" },
+                        { y: 169709,  label: "Rubavu" },
+                        { y: 158400,  label: "Musanze" },
+                        { y: 142503,  label: "Nyanza" }
+                        
+                        
+                    ]
+                }]
+            });
+            chart.render();
+            
+            }
+
+            
+            </script>
+            <script>
+                window.onload = function() {
+                
+                var chart = new CanvasJS.Chart("chartContainer", {
+                    animationEnabled: true,
+                    title: {
+                        text: "Desktop Search Engine Market Share - 2016"
+                    },
+                    data: [{
+                        type: "pie",
+                        startAngle: 240,
+                        yValueFormatString: "##0.00\"%\"",
+                        indexLabel: "{label} {y}",
+                        dataPoints: [
+                            {y: 79.45, label: "Google"},
+                            {y: 7.31, label: "Bing"},
+                            {y: 7.06, label: "Baidu"},
+                            {y: 4.91, label: "Yahoo"},
+                            {y: 1.26, label: "Others"}
+                        ]
+                    }]
+                });
+                chart.render();
+                
+                }
+                </script>
+
+    </head>   
+    <bod> 
+
+       
+       <div class="divHeader"> 
+           <div class="logDiv">
+                    <img src="../images/crone.png" alt="Girl in a jacket" width="98" height="112" >
+                    <div class="preno"><h5><p>Esli</p></h5></div>
+                    <div class="nom"><h3>Nsengiyumva</h3></div>
+           </div>
+            <div class="menuDiv">
+                 
+                        
+                          <div class="container">
+                             <div class="nav-wrapper">
+        
+                            <div class="left-side">
+        
+                                <div class="nav-link-wrapper">
+                                    <a href="url">Home</a>
+                                </div>
+                                <div class="nav-link-wrapper">
+                                    <a href="url">About</a>
+                                </div>
+                                <div class="nav-link-wrapper">
+                                    <a href="url">Portfolio</a>
+                                </div>
+                                <div class="nav-link-wrapper">
+                                    <a href="url">Blog</a>
+                                </div>
+                                <div class="nav-link-wrapper">
+                                    <a href="url">Contact</a>
+                                </div>
+                                
+                               </div>
+                             </div> 
+                           </div>
+
+                       
+
+
+                </div>
+
+            
+            
+                <div>
+                    <button type="button " class="buttonLogin">Login</button>
+                    <button type="button" class="buttonShare">Share</button>
+                
+                </div>
+            </div>
+        
+            </div>
+
+            
+        </div>
+       
+
+
+         <div class="profileIndexForm">  </div>Index
+       <div class="backgroundPhoto">    </div>
+       <label class="labelAdmin">Administrator</label>
+       <label class="labelFeature">Feautures</label>
+       <hr class="horizontalLine">
+       <label class="labelExtras">EXTRAS</label>
+       <hr class="horizontalLine2">
+       <label class="labelItems">Items</label>
+       <label class="labelUsers">Users</label>
+       <label class="labelLogin">Logout</label>
+       <Label class="labelRegister">Register</Label>
+     <div class="loginImage">
+        <img src="../images/login ima.jpg" alt="login" width="30" height="35" >
+     </div>
+     <div class="manImage">
+        <img src="../images/man image.jpg" alt="login" width="30" height="35" >
+     </div>
+     <div class="itemImage">
+        <img src="../images/items.jpg" alt="login" width="30" height="35" >
+     </div>
+     <div class="userImage">
+        <img src="../images/users.png" alt="login" width="30" height="35" >
+     </div>
+
+     <div class="divVisitors ">  </div>
+     <label class="visit">Visitors</label>
+            <label class="number"> 1,456,664</label>
+            <hr class="lineRed">
+            <div class="point">
+                <img src=" ../images/points1.png" width="38" height="39" alt="login">
+           </div>
+     <div class="divSubscription">     </div>
+            <label class="visit2">Total Subscription</label>
+            <label class="number2"> 56,378</label>
+            <hr class="lineBlue">
+            <div class="point2">
+                <img src=" ../images/points1.png" width="38" height="39" alt="login">
+            </div>
+     <div class="divProfit">     </div>
+            <label class="visit3">Net Profit</label>
+            <label class="number3"> Frw 2,546,630</label>
+            <hr class="lineGreen">
+            <div class="point3">
+                <img src=" ../images/points1.png" width="38" height="39" alt="login">
+            </div>
+     <div class="divDailySales">    </div>
+     <label class="visit4">Daily Sales</label>
+            <label class="number4"> 253,254</label>
+            <hr class="lineViole">
+            <div class="point4">
+                <img src=" ../images/points1.png" width="38" height="39" alt="login">
+            </div>
+     <div class="divSales">
+         <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+              <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+         </div>
+
+             
+
+
+        <div class="divPieChart">
+
+              
+       </div>
+            <div class="tst"></div>
+            <div class="div1"></div>
+            <label class="label1">Total Sales  5600</label>
+            <div class="div2"></div>
+            <label class="label2">Computers & Accessories</label>
+            <div class="div3"></div>
+            <label class="label3">Shop Laptops & Tablets</label>
+            <div class="div4"></div>
+            <label class="label4">Beauty picks</label>
+            <div class="div5"></div>
+            <label class="label5">Gaming and Accessories</label>
+            <div class="divEarnings"></div>
+            <div class="divStock"></div>
+
+
+
+
+
+
+    </bod>
+</html>
